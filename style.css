@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    font-family: sans-serif;
+
+}
+
+.container {
+    padding: 0 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left .logo img {
+    width: 120px;
+}
+
+.nav-right img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 12px;
+
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-left i {
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.nav-left .logo {
+    position: relative;
+}
+
+.nav-left .logo span {
+    position: absolute;
+    font-size: 11px;
+    top: 14px;
+    right: -5px;
+}
+
+.nav-center {
+    width: 700px;
+    max-width: 600px;
+
+}
+
+.nav-center .search-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.nav-center .search-box input {
+    width: 85%;
+    line-height: 40px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 16px;
+    border-right: 1px solid #eee;
+
+}
+
+.nav-center .search-box i {
+    width: 10%;
+    background: #eee;
+    line-height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-center .voice-search i {
+    font-size: 22px;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 60%;
+    margin-left: 20px;
+}
+
+.nav-center .voice-search i:hover {
+    background: #cecdcd;
+    cursor: pointer;
+
+}
+
+.nav-right i {
+    font-size: 24px;
+    color: #707070;
+    margin: 0 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right i:hover {
+    background: #ccc;
+}
+
+
+
+@media only  screen and (max-width:767px){
+    .nav-center{
+        display: flex-end;
+    }
+
+    .nav-center .search-box{
+        height: 40px;
+        width: 40px;
+        border: 0;
+    }
+
+    .nav-center .search-box input{
+        display: none;
+    }
+
+    .nav-center .search-box i{
+        width: 100%;
+        border-radius: 50%;
+        background: transparent;
+        font-size: 22px;
+        columns: #707070;
+
+    }
+
+    .nav-center .voice-search i{
+        background: transparent;
+    }
+
+    .nav-right i{
+        margin: 0;
+    }
+}
